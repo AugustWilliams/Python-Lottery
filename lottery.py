@@ -1,5 +1,3 @@
-print ("commit test")
-print ("gus commit test version two")
 def pickNumbers():
     numbersPicked, count = [], 5
     while count > 0:
@@ -24,7 +22,6 @@ def rollNumbers():
             count -= 1
     print (rolledNumbers)
     return rolledNumbers
-print ("stew commit test")
 
 def checkNumbers(numbersPicked, rolledNumbers):
     prizes = {0:"£0", 1:"£2.50", 2:"£5", 3:"£10", 4:"£50", 5:"£100"}

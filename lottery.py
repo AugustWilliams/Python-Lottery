@@ -1,16 +1,8 @@
-print ("test")
 def pickNumbers():
-    numbersPicked, count = [], 5
-    while count > 0:
-        print("Pick five numbers between 1 and 50")
-        pickedNumber = int(input("..."))
-        if ((pickedNumber > 50) | (pickedNumber < 0)):
-            print ("Pick a number between 0 and 50")
-        elif pickedNumber not in numbersPicked:
-            numbersPicked.append(pickedNumber)
-            count -= 1
-        else:
-            print ("Number already picked, pick again")
+    print("Pick five numbers between 1 and 50, seperated by commas")
+    numbersPicked = input("...")
+    numbersPicked = numbersPicked.replace(" ", "")
+    numbersPicked = numbersPicked.split(",")
     return numbersPicked
 
 def rollNumbers():

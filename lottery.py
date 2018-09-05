@@ -20,7 +20,7 @@ def checkNumbers(numbersPicked, rolledNumbers):
     prizes = {0:"£0", 1:"£2.50", 2:"£5", 3:"£10", 4:"£50", 5:"£100"}
     matchedCount = 0
     for element in numbersPicked:
-        if element in rolledNumbers:
+        if int(element) in rolledNumbers:
             matchedCount += 1
     print ("")
     print ("Your numbers:", numbersPicked)
